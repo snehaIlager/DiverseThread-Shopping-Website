@@ -1,0 +1,63 @@
+.womenDress-products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.womenDress-product-item {
+  width: 250px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+.womenDress-product-item img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.womenDress-product-details {
+  margin-top: 10px;
+}
+
+.rating {
+  font-size: 14px;
+  color: #388e3c;
+  font-weight: bold;
+}
+
+.brand-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0 2px;
+}
+
+.short-description {
+  font-size: 14px;
+  color: #555;
+  margin: 2px 0;
+}
+
+.price {
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.current-price {
+  font-weight: bold;
+  color: #000;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 5px;
+}
+
+.discount {
+  color: #d32f2f;
+  margin-left: 5px;
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Dresses</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/Stylesheets/StyleForDresses/mainSection.css">
+    <link rel="stylesheet" href="/Stylesheets/StyleForDresses/sidebar.css">
+    <link rel="stylesheet" href="/Stylesheets/StyleForDresses/colorBox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <ul class="nav-links">
+                <li><a href='/index.html'>Home</a></li>
+                <li><a href='/Sections/women.html'>Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+        <div class="brand">DIVERSE THREAD</div>
+        <div class="icons">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="clothing-container">
+        
+        <!-- Sidebar (Filters) -->
+        <aside class="sidebar">
+    <h3>Category</h3>
+
+    
+    <!-- Fit Dropdown -->
+  <div class="dropdown">
+    <h3 class="dropdown-title">Fit <span class="arrow">&#9660;</span></h3>
+    <ul class="dropdown-content">
+      <li><label><input type="checkbox">Skinny</label></li>
+      <li><label><input type="checkbox">Straight Fit</label></li>
+      <li><label><input type="checkbox">Wide leg</label></li>
+      <li><label><input type="checkbox">Bell bottoms</label></li>
+      <li><label><input type="checkbox">Flared</label></li>
+      <li><label><input type="checkbox">Cargos</label></li>
+    </ul>
+  </div>
+
+  
+  <!-- Brand Dropdown -->
+  <div class="dropdown">
+    <h3 class="dropdown-title">Brand <span class="arrow">&#9660;</span></h3>
+    <ul class="dropdown-content">
+      <li><label><input type="checkbox">Amydus</label></li>
+      <li><label><input type="checkbox">Spirit Animal</label></li>
+      <li><label><input type="checkbox">Plus Curves</label></li>
+      <li><label><input type="checkbox">Sassafars</label></li>
+      <li><label><input type="checkbox">Style Quotient</label></li>
+      <li><label><input type="checkbox">Freeform</label></li>
+      <li><label><input type="checkbox">Nordstrom </label></li>
+      <li><label><input type="checkbox">Anayan</label></li>
+    </ul>
+  </div>
+  <!-- Size Dropdown -->
+  <div class="dropdown">
+    <h3 class="dropdown-title">Size <span class="arrow">&#9660;</span></h3>
+    <ul class="dropdown-content">
+      <li><label><input type="checkbox"> 34</label></li>
+      <li><label><input type="checkbox"> 36</label></li>
+      <li><label><input type="checkbox"> 38</label></li>
+      <li><label><input type="checkbox"> 40</label></li>
+      <li><label><input type="checkbox"> 42</label></li>
+      <li><label><input type="checkbox"> 44</label></li>
+      <li><label><input type="checkbox"> 46</label></li>
+      <li><label><input type="checkbox"> 48</label></li>
+       <li><label><input type="checkbox"> 50</label></li>
+    </ul>
+  </div>
+
+<!-- Color Filter Section -->
+<div class="dropdown color-dropdown">
+  <h3 class="dropdown-title">Colour</h3>
+  <ul class="dropdown-content color-list">
+    <li>
+      <label>
+        <input type="checkbox">
+        <span class="color-circle" style="background-color: #007bff;"></span> Blue <span class="count"></span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox">
+        <span class="color-circle" style="background-color: #000000;"></span> Black <span class="count"></span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox">
+        <span class="color-circle" style="background-color: #1a1a40;"></span> Navy Blue <span class="count"></span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox">
+        <span class="color-circle" style="background-color: #cccccc;"></span> Grey <span class="count"></span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox">
+        <span class="color-circle" style="background-color: #ffffff; border: 1px solid #ccc;"></span> White <span class="count"></span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox">
+        <span class="color-circle" style="background-color: #f5f5dc;"></span> Beige <span class="count"></span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox">
+        <span class="color-circle" style="background-color: #444;"></span> Charcoal <span class="count"></span>
+      </label>
+    </li>
+  </ul>
+  <p class="more-link">+ 24 more</p>
+</div>
+
+  <!-- Fabric Dropdown -->
+  <div class="dropdown">
+    <h3 class="dropdown-title">Fabric <span class="arrow">&#9660;</span></h3>
+    <ul class="dropdown-content">
+      <li><label><input type="checkbox"> Cotton</label></li>
+      <li><label><input type="checkbox"> Cotton Blend</label></li>
+      <li><label><input type="checkbox"> Denim</label></li>
+      <li><label><input type="checkbox"> Cotton Lycra</label></li>
+    </ul>
+  </div>
+
+  
+
+  <!-- Price Slider -->
+  <h3>Price</h3>
+<input type="range" min="899" max="4999" step="100" value="2500" class="price-slider" id="priceRange">
+<p>Selected Price: ₹<span id="priceValue">2500</span></p>
+</aside>
+
+
+        <!-- Main Section -->
+<section class="main-content">
+  <h2 class="page-title">Women's Jeans</h2>
+  <hr class="title-underline">
+
+  <div class="womenDress-products-grid">
+    <div class="womenDress-product-item">
+      <a href="/Categories/Jeans/jean1/jeans1.html">
+        <img src="/Categories/Jeans/jean1/jeanIMG4.jpg" alt="Floral Summer Dress">
+      </a>
+      <div class="womenDress-product-details">
+        <div class="rating">4.3 ★</div>
+        <div class="brand-name">Diverse Thread</div>
+        <div class="short-description">Women Black Mid-Rise Comfort Clean Look Stretchable Jeans</div>
+        <div class="price">
+          <span class="current-price">₹1020.99</span>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="womenDress-product-item">
+      <a href="product2.html">
+        <img src="/Photos/Pants/jeans1.png" alt="Bodycon knee length">
+      </a>
+      <div class="womenDress-product-details">
+        <div class="rating">4.5 ★</div>
+        <div class="brand-name">Spirit Animal</div>
+        <div class="short-description">Women Brown Denim Flared Pants</div>
+        <div class="price">
+          <span class="current-price">₹2300.99</span>
+         
+        </div>
+      </div>
+    </div>
+
+    <div class="womenDress-product-item">
+      <a href="product3.html">
+        <img src="/Photos/Pants/jeans2.png" alt="Bodycon Black Dress">
+      </a>
+      <div class="womenDress-product-details">
+        <div class="rating">4.7 ★</div>
+        <div class="brand-name">Amydus</div>
+        <div class="short-description">Women Blue Washed Side Tape Wide Leg Jeans</div>
+        <div class="price">
+          <span class="current-price">₹3200.99</span>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="womenDress-product-item">
+      <a href="product4.html">
+        <img src="/Photos/Pants/jeans3.png" alt="Mid thigh length dress">
+      </a>
+      <div class="womenDress-product-details">
+        <div class="rating">4.2 ★</div>
+        <div class="brand-name">Sassafras</div>
+        <div class="short-description">Women Black Ombre Straight Jeans</div>
+        <div class="price">
+          <span class="current-price">₹1999.99</span>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+<script>
+  fetch('/Components/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    })
+    .catch(error => {
+      console.error('Error loading footer:', error);
+    });
+</script>
+
+
+
+<script>
+  const dropdownTitles = document.querySelectorAll(".dropdown-title");
+
+  dropdownTitles.forEach(title => {
+    title.addEventListener("click", () => {
+      const currentDropdown = title.parentElement;
+
+      // Close all other dropdowns
+      document.querySelectorAll(".dropdown").forEach(dropdown => {
+        if (dropdown !== currentDropdown) {
+          dropdown.classList.remove("active");
+        }
+      });
+
+      // Toggle current one
+      currentDropdown.classList.toggle("active");
+    });
+  });
+</script>
+
+<!-- Script for dynamic price slidebar -->
+<script>
+  const priceSlider = document.getElementById("priceRange"); // match the ID exactly
+  const priceValue = document.getElementById("priceValue");
+
+  priceSlider.addEventListener("input", function () {
+    priceValue.textContent = this.value;
+    // You can trigger filtering logic here if needed
+  });
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Floral Summer Dress</title>
+  <link rel="stylesheet" href="/Categories/Jeans/jean1/jeans-Style.css">
+  <link rel="stylesheet" href="/style.css">
+
+  <script>
+    // JS function to load includes
+    function loadHTML(id, file) {
+      fetch(file)
+        .then(response => {
+          if (!response.ok) throw new Error('Fetch error');
+          return response.text();
+        })
+        .then(data => document.getElementById(id).innerHTML = data)
+        .catch(error => console.log('Include error:', error));
+    }
+  </script>
+</head>
+
+<body onload="
+  loadHTML('top-bar', '/Components/top-bar.html');
+  loadHTML('navbar', '/Components/navbar.html');
+  loadHTML('header', '/Components/header.html');
+  loadHTML('footer', '/Components/footer.html');
+">
+
+<!-- Dynamic Components -->
+  <div id="top-bar"></div>
+  <div id="navbar"></div>
+  <div id="header"></div>
+
+  <div class="container">
+    <!-- LEFT SECTION -->
+    <div class="left-section">
+      <div class="thumbnails">
+        <img src="/Categories/Jeans/jean1/jeanImg2.jpg" alt="Thumbnail 1">
+        <img src="/Categories/Jeans/jean1/jeanImg3.jpg" alt="Thumbnail 2">
+        <img src="/Categories/Jeans/jean1/jeanIMG4.jpg" alt="Thumbnail 3">
+      </div>
+      <div class="main-image">
+        <img src="/Categories/Jeans/jean1/JeanImg1.jpg" alt="Main Dress">
+      </div>
+    </div>
+
+    <!-- RIGHT SECTION -->
+    <div class="right-section">
+      <h1>Diverse Thread</h1>
+      <div class="short-description">Women Black Mid-Rise Comfort Clean Look Stretchable Jeans</div>
+
+      <div class="price">
+        ₹1020.99 <span class="old-price"></span>
+      </div>
+      <div class="rating">★★★★★ (50)</div>
+
+      <h3>COLORS</h3>
+        <div class="color-options">
+    <span class="color-swatch" style="background-color:black"></span>
+    <span class="color-swatch" style="background-color: blanchedalmond;"></span>
+    <span class="color-swatch" style="background-color: darkblue;"></span>
+</div>
+
+
+      <h3>Customize</h3>
+      <table class="customize-table">
+        <tr><td>Front Pocket Style</td><td class="option">Classic</td><td><button>Edit</button></td></tr>
+        <tr><td>Back Pocket Style</td><td class="option">Cut N Sew</td><td><button>Edit</button></td></tr>
+        <tr><td>Rise style</td><td class="option">Mid</td><td><button>Edit</button></td></tr>
+        <tr><td>Fly Style</td><td class="option">Zipper</td><td><button>Edit</button></td></tr>
+        <tr><td>Hem Style</td><td class="option">Regular</td><td><button>Edit</button></td></tr>
+      </table>
+
+      <div class="size-select">
+        <strong>Select Size:</strong><br>
+        <button>Standard Size</button>
+        <button>Custom Size</button>
+      </div>
+
+      <div class="login-box">
+        <p>Use My Last Measurements?</p>
+        <button>Login</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- The other half -->
+   <div class="product-details-section">
+  <div class="tabs">
+    <button class="tab-button active" onclick="showTab('description')">Description</button>
+    <button class="tab-button" onclick="showTab('care')">Wash And Care Guide</button>
+    <button class="tab-button" onclick="showTab('shipping')">Shipping and Alterations</button>
+  </div>
+
+  <div class="content-section">
+    <div class="left-content">
+      <div class="feature">
+        <img src="denim1.jpg" alt="Medium Weight Denim" class="feature-icon">
+        <div>
+          <h3> Medium Weight 2-Way Stretch Denim</h3>
+          <p>Good clean 11 oz denim, blended with a hint of stretch, finished with simple hardware that gives the Jeans a soft texture and comfortable feel on the skin.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <img src="denim2.jpg" alt="Super Premium Denim" class="feature-icon">
+        <div>
+          <h3>Super Premium Denim</h3>
+          <p>Our good looking and highly durable stretch denim is a blend of Cotton and Polyester with 2% Elastane, sourced from one of the finest mills in India like LNJ Denim, KG Denim & Raymond UCO with YKK zippers and premium quality Buttons and Rivets.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <img src="denim3.jpg" alt="Denim Process" class="feature-icon">
+        <div>
+          <h3>Denim Process</h3>
+          <p>To give our jeans a great character we’ve applied a rinse wash, and hand sanded for finishing giving them a clean and raw look.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <img src="made-in-india.png" alt="Proudly Made In India" class="feature-icon">
+        <div>
+          <h3>Proudly Made In India</h3>
+          <p>Whether it's our fabric, stitching or finishing everything is produced in India and matching international standards.</p>
+        </div>
+      </div>
+    </div>
+    <div class="right-image">
+      <img src="tailor.jpg" alt="Tailoring Denim">
+    </div>
+  </div>
+</div>
+
+  <div id="care" class="tab-content">
+    <p>Wash and care information goes here...</p>
+  </div>
+
+  <div id="shipping" class="tab-content">
+    <p>Shipping and alteration details go here...</p>
+  </div>
+</div>
+<script>
+  function showTab(tabId) {
+    document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+    document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+    document.getElementById(tabId).classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
+
+
+  <div id="footer"></div>
+</body>
+</html>

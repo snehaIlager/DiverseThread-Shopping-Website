@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Floral Summer Dress</title>
+  <link rel="stylesheet" href="/Categories/Dresses/Dress1.html/Dress1-Style.css">
+  <link rel="stylesheet" href="/style.css">
+
+  <script>
+    // JS function to load includes
+    function loadHTML(id, file) {
+      fetch(file)
+        .then(response => {
+          if (!response.ok) throw new Error('Fetch error');
+          return response.text();
+        })
+        .then(data => document.getElementById(id).innerHTML = data)
+        .catch(error => console.log('Include error:', error));
+    }
+  </script>
+</head>
+
+<body onload="
+  loadHTML('top-bar', '/Components/top-bar.html');
+  loadHTML('navbar', '/Components/navbar.html');
+  loadHTML('header', '/Components/header.html');
+  loadHTML('footer', '/Components/footer.html');
+">
+
+<!-- Dynamic Components -->
+  <div id="top-bar"></div>
+  <div id="navbar"></div>
+  <div id="header"></div>
+
+  <div class="container">
+    <!-- LEFT SECTION -->
+    <div class="left-section">
+      <div class="thumbnails">
+        <img src="/Photos/Dress/dress1.png" alt="Thumbnail 1">
+        <img src="/Photos/Dress/dress2.png" alt="Thumbnail 2">
+        <img src="/Photos/Dress/dress3.png" alt="Thumbnail 3">
+      </div>
+      <div class="main-image">
+        <img src="/Photos/Dress/dress1.png" alt="Main Dress">
+      </div>
+    </div>
+
+    <!-- RIGHT SECTION -->
+    <div class="right-section">
+      <h1>Floral Summer Dress</h1>
+      <div class="price">
+        ₹1020.99 <span class="old-price">₹1499</span>
+      </div>
+      <div class="rating">★★★★★ (50)</div>
+
+      <h3>COLORS</h3>
+        <div class="color-options">
+    <span class="color-swatch" style="background-color: #FF8C94;"></span>
+    <span class="color-swatch" style="background-color: #FFD700;"></span>
+    <span class="color-swatch" style="background-color: #87CEFA;"></span>
+</div>
+
+
+      <h3>Customize</h3>
+      <table class="customize-table">
+        <tr><td>Front Neck Style</td><td class="option">Boat Neck</td><td><button>Edit</button></td></tr>
+        <tr><td>Sleeve Type</td><td class="option">Puff Sleeve</td><td><button>Edit</button></td></tr>
+        <tr><td>Waist Fit</td><td class="option">Slim</td><td><button>Edit</button></td></tr>
+        <tr><td>Back Design</td><td class="option">Zipper</td><td><button>Edit</button></td></tr>
+        <tr><td>Length</td><td class="option">Knee Length</td><td><button>Edit</button></td></tr>
+      </table>
+
+      <div class="size-select">
+        <strong>Select Size:</strong><br>
+        <button>Standard Size</button>
+        <button>Custom Size</button>
+      </div>
+
+      <div class="login-box">
+        <p>Use My Last Measurements?</p>
+        <button>Login</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- The other half -->
+   <div class="product-details-section">
+  <div class="tabs">
+    <button class="tab-button active" onclick="showTab('description')">Description</button>
+    <button class="tab-button" onclick="showTab('care')">Wash And Care Guide</button>
+    <button class="tab-button" onclick="showTab('shipping')">Shipping and Alterations</button>
+  </div>
+
+  <div id="description" class="tab-content active">
+    <div class="description-container">
+      <div class="description-left">
+        <div class="desc-item">
+          <img src="img/stretch-denim.jpg" alt="Stretch Denim Icon">
+          <div>
+            <strong>Idhar Jo likha hai likh do</strong>
+            <p>HAA jhaajbjkbxkje jbkjbckjrbj</p>
+          </div>
+        </div>
+
+        <div class="desc-item">
+          <img src="img/premium-denim.jpg" alt="Premium Icon">
+          <div>
+            <strong>Idhar Jo likha hai likh do</strong>
+            <p>Heeee heee heeeee</p>
+          </div>
+        </div>
+
+        <div class="desc-item">
+          <img src="img/denim-process.jpg" alt="DProcess Icon">
+          <div>
+            <strong>Idhar Jo likha hai likh do</strong>
+            <p>HUHUHUHUHUHUH huhuhuhuhu</p>
+          </div>
+        </div>
+
+        <div class="desc-item">
+          <img src="img/made-in-india.jpg" alt="Made in India Icon">
+          <div>
+            <strong>Idhar Jo likha hai likh do</strong>
+            <p>hihihih hihihih hihih</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="description-right">
+        <img src="img/cutting-fabric.jpg" alt="Tailoring">
+      </div>
+    </div>
+  </div>
+
+  <div id="care" class="tab-content">
+    <p>Wash and care information goes here...</p>
+  </div>
+
+  <div id="shipping" class="tab-content">
+    <p>Shipping and alteration details go here...</p>
+  </div>
+</div>
+<script>
+  function showTab(tabId) {
+    document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+    document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+    document.getElementById(tabId).classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
+
+
+  <div id="footer"></div>
+</body>
+</html>

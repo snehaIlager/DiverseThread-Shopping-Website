@@ -1,0 +1,67 @@
+.sidebar {
+  display: flex;
+  flex-direction: column; /* ✅ Ensures dropdowns stack vertically */
+}
+
+.sidebar details {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.sidebar details summary {
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.sidebar details ul {
+  list-style: none;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+.sidebar details ul li {
+  margin: 4px 0;
+}
+
+.sidebar input[type="range"] {
+  width: 100%;
+  margin-top: 8px;
+}
+
+/* Keep existing sidebar styling and add dropdown support */
+.sidebar h3 {
+  margin: 15px 0 10px;
+  font-size: 16px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-title {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 0;
+  transition: color 0.2s ease-in-out;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.price-slider {
+  width: 100%;
+  margin: 10px 0;
+}

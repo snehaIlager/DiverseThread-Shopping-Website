@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women - Diverse Thread</title>
+    <link rel="stylesheet" href='/style.css'>
+     <link rel="stylesheet" href='/Stylesheets/StyleForWomenSection/WomenSectionDrop.css'>
+     <link rel="stylesheet" href='/Stylesheets/StyleForFooter/FooterStyle.css'>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <p>Get early access on launches and offers. <a href="#">SIGN UP</a></p>
+        <span class="country">IND</span>
+    </div>
+
+    <!-- Navbar (Remains on this page) -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <ul class="nav-links">
+                <li><a href='/index.html'>Home</a></li>
+                <li><a href='/Sections/women.html'>Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+
+        <div class="brand">DIVERSE THREAD</div>
+
+        <div class="icons">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </nav>
+    <div class="women-menu-bar">
+  <ul class="women-nav-links">
+    <li>
+      <a class="women-nav-btn" href="/clothing">Clothing</a>
+    </li>
+
+    <li class="women-dropdown">
+      <a href="#" class="women-nav-btn">Tops & Tees</a>
+      <div class="women-dropdown-menu">
+        <p>All Tops & Tees</p>
+        <p>Casual Tops</p>
+        <p>Graphic Tees</p>
+        <p>Cropped Tees</p>
+      </div>
+    </li>
+
+    <li class="women-dropdown">
+      <a href="#" class="women-nav-btn">Dresses</a>
+      <div class="women-dropdown-menu">
+        <p>All Dresses</p>
+        <p>Casual</p>
+        <p>Party Wear</p>
+        <p>Evening Gowns</p>
+        <p>Summer Dresses</p>
+      </div>
+    </li>
+
+    <li class="women-dropdown">
+      <a href="#" class="women-nav-btn">Skirts</a>
+      <div class="women-dropdown-menu">
+        <p>All Skirts</p>
+        <p>A line</p>
+        <p>Skorts</p>
+        <p>Maxi</p>
+        <p>Pencil</p>
+        <p>Straight</p>
+        <p>Tiered</p>
+      </div>
+    </li>
+
+    <li class="women-dropdown">
+      <a href="#" class="women-nav-btn">Jeans & Trousers</a>
+      <div class="women-dropdown-menu">
+        <p>All Jeans & Trousers</p>
+        <p>Cargos</p>
+        <p>Flared</p>
+        <p>Bell bottoms</p>
+        <p>Wide leg</p>
+        <p>Straight fit</p>
+        <p>Skinny</p>
+      </div>
+    </li>
+
+    <li class="women-dropdown">
+      <a href="#" class="women-nav-btn">Footwear</a>
+      <div class="women-dropdown-menu">
+        <p>All Footwear</p>
+        <p>Heels</p>
+        <p>Flats</p>
+        <p>Sandals</p>
+        <p>Sneakers</p>
+        <p>Wedges</p>
+      </div>
+    </li>
+  </ul>
+</div>
+
+    
+    
+    <section class="trending">
+  <h2>Collections</h2>
+  <div class="trending-grid">
+    <div class="trend-item">
+      <a href="/Categories/Dresses/DressesMain/dresses.html">
+        <div class="image-container">
+          <img src="/Photos/Dress/dressmain.jpg" alt="Dresses">
+          <p>Dresses</p>
+        </div>
+      </a>
+    </div>
+    <div class="trend-item">
+      <a href="/Categories/Skirts/skirtMainHtml/skirts.html">
+        <div class="image-container">
+          <img src="/Photos/Skirts/skirtmain.png" alt="Skirts">
+          <p>Skirts</p>
+        </div>
+      </a>
+    </div>
+    <div class="trend-item">
+      <a href="/Categories/Jeans/jeansMain/jeans.html">
+        <div class="image-container">
+          <img src="/Photos/Pants/JeansMain.jpg" alt="Jeans">
+          <p>Jeans & Trousers</p>
+        </div>
+      </a>
+    </div>
+    <div class="trend-item">
+      <a href="/Categories/Tops/topsMain/tops.html">
+        <div class="image-container">
+          <img src="/Photos/Top & Tees/teemain.png" alt="Tops & Tees">
+          <p>Tops & Tees</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- ✅ New Footwear Item -->
+    <div class="trend-item">
+      <a href="/Categories/Footwear/footMain/footwear.html">
+        <div class="image-container">
+          <img src="/footwear3.png" alt="Footwear">
+          <p>Footwear</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Footer -->
+    <div id="footer"></div>
+
+<script>
+  fetch('/Components/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    })
+    .catch(error => {
+      console.error('Error loading footer:', error);
+    });
+</script>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
